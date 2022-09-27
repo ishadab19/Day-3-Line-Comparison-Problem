@@ -15,25 +15,31 @@ public class LineComparisonCompution {
 		System.out.println("Enter Value Y1 Y2 Y3 Y4");
 		int y1 = sc.nextInt();
 		int y2 = sc.nextInt();
-		int y3= sc.nextInt();
+		int y3 = sc.nextInt();
 		int y4 = sc.nextInt();
 		double length1;
 		double length2;
 		
-		length1 = Math.sqrt(Math.pow(x2 - x1,2) + Math.pow(y2 - y1,2));
+		length1 = Math.sqrt(Math.pow(x2 - x1,2) + Math.pow(y2 - y1,2));//finding lengths
 		System.out.println("Length Of Line1: "+length1);
 		length2 =Math.sqrt(Math.pow(x4 - x3,2) + Math.pow(y4 - y3,2));
 		System.out.println("Length Of Line2: "+length2);
 		
 
 		if(length1 == length2) {
-			System.out.println("Both Length Are Equal");
+			System.out.println("Both Lines Are Equals");
 		}
-		else {
-			System.out.println("Not Equal");
-		}
+		else if(length1 > length2) {
+				System.out.println("Length Of First Line is Greater");
+			}
+				else {
+					System.out.println("Length Of second Line is Greater");
+				}
+				
+			}
+		
 		}
 		
-	}
+	
 
 
